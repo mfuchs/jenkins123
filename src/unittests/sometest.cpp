@@ -19,6 +19,7 @@ void SomeTest::test_area_data()
     QTest::newRow("a=0 --> 0") << 0 << 10 << 0;
     QTest::newRow("b=0 --> 0") << 10 << 0 << 0;
     QTest::newRow("a=0, b=0 --> 0") << 0 << 0 << 0;
+    QTest::newRow("a<0 --> 0") << -10 << 0 << 0;
     QTest::newRow("regular one") << 10 << 20 << 200;
 }
 
