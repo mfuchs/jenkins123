@@ -15,6 +15,8 @@ function(add_qttest test_name)
 endfunction()
 
 project(Jenkins123)
+
+include(CTest)
 enable_testing()
 
 # Tell CMake to run moc/rcc when necessary:
